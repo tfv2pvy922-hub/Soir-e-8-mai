@@ -370,21 +370,28 @@ qs("#song-form").addEventListener("submit", async (event) => {
 
 qs("#mtb-form").addEventListener("submit", async (event) => {
   event.preventDefault();
+
+  if (localStorage.getItem("cr3pscl-voted")) {
+    qs("#vote-confirmation").textContent = "T'as déjà voté, triche pas.";
+    return;
+  }
+
   const vote = {
     marry: qs("#marry-choice").value,
     kill: qs("#kill-choice").value,
     kiss: qs("#kiss-choice").value,
   };
   if (new Set(Object.values(vote)).size !== 3) {
-    qs("#vote-confirmation").textContent = "Il faut choisir une personne differente pour chaque categorie.";
+    qs("#vote-confirmation").textContent = "Il faut choisir une personne différente pour chaque catégorie.";
     return;
   }
 
   qs("#vote-confirmation").textContent = "Envoi...";
   const result = await saveSharedEvent("poll", vote);
+  localStorage.setItem("cr3pscl-voted", "true");
   qs("#vote-confirmation").textContent = result.local
-    ? "Vote note en local. Configure Supabase pour le partage public."
-    : "Vote ajoute aux resultats publics.";
+    ? "Vote noté en local."
+    : "Vote ajouté aux résultats publics.";
 });
 
 setupPollSelects();
