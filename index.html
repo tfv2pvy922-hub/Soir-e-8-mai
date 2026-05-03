@@ -6,7 +6,7 @@
     <title>CR3PSCL - Soirée Tech du 8 Mai</title>
     <meta
       name="description"
-      content="Page d'organisation pour la soiree tech CR3PSCL du 8 mai."
+      content="Page d'organisation pour la soirée tech CR3PSCL du 8 mai."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +33,7 @@
         </a>
         <div class="nav-pills" role="tablist" aria-label="Onglets de la soirée">
           <button class="tab-button is-active" type="button" data-tab="home">Accueil</button>
-          <button class="tab-button" type="button" data-tab="activities">Activites</button>
+          <button class="tab-button" type="button" data-tab="activities">Activités</button>
           <button class="tab-button" type="button" data-tab="menu">Menu</button>
           <button class="tab-button" type="button" data-tab="setlist">Setlist</button>
           <button class="tab-button" type="button" data-tab="maps">Maps & couchage</button>
@@ -49,12 +49,12 @@
             Soirée tech entre copains, all night long
           </p>
           <div class="hero-actions">
-            <a class="primary-action" href="#presence-form">Je reponds</a>
+            <a class="primary-action" href="#presence-form">Je réponds</a>
             <button class="ghost-action" type="button" data-tab-jump="setlist">Proposer un son</button>
           </div>
         </div>
 
-        <aside class="countdown-card" aria-label="Compte a rebours">
+        <aside class="countdown-card" aria-label="Compte à rebours">
           <span class="card-label">Décollage dans</span>
           <div class="countdown" id="countdown">
             <div><strong id="days">--</strong><span>jours</span></div>
@@ -62,13 +62,13 @@
             <div><strong id="minutes">--</strong><span>min</span></div>
             <div><strong id="seconds">--</strong><span>sec</span></div>
           </div>
-          <p id="countdown-note">Rendez-vous le vendredi 8 mai 2026 a 19h00</p>
+          <p id="countdown-note">Rendez-vous le vendredi 8 mai 2026 à 19h00</p>
         </aside>
 
         <section class="signup-panel" id="presence-form">
           <div>
             <p class="section-eyebrow">Présence & ravitaillement</p>
-            <h2>Dis si tu viens et ce que tu ramenes</h2>
+            <h2>Dis si tu viens et ce que tu ramènes.</h2>
           </div>
           <form class="presence-form" id="guest-form">
             <label>
@@ -78,8 +78,8 @@
             <label>
               Statut
               <select id="guest-status" name="guestStatus">
-                <option value="present">Present</option>
-                <option value="maybe">Peut-etre</option>
+                <option value="present">Présent</option>
+                <option value="maybe">Peut-être</option>
                 <option value="absent">Absent mais je surveille</option>
               </select>
             </label>
@@ -89,17 +89,15 @@
                 id="guest-brings"
                 name="guestBrings"
                 type="text"
-                placeholder="Glacons, alcools, softs..."
+                placeholder="Glaçons, alcools, softs..."
               />
             </label>
             <button class="primary-action" type="submit">Ajouter</button>
           </form>
-          <div class="form-status" id="guest-confirmation" aria-live="polite">
-            
-          </div>
+          <div class="form-status" id="guest-confirmation" aria-live="polite"></div>
           <div class="guest-stats" aria-live="polite">
-            <span><strong id="present-count">0</strong> presents</span>
-            <span><strong id="maybe-count">0</strong> indecis</span>
+            <span><strong id="present-count">0</strong> présents</span>
+            <span><strong id="maybe-count">0</strong> indécis</span>
             <span><strong id="bring-count">0</strong> apports</span>
           </div>
           <div class="guest-list" id="guest-list"></div>
@@ -111,54 +109,55 @@
       <section class="tab-panel" id="activities" aria-labelledby="activities-title">
         <div class="section-heading">
           <p class="section-eyebrow">Programme approximatif</p>
-          <h2 id="activities-title">Activites</h2>
+          <h2 id="activities-title">Activités</h2>
         </div>
         <div class="activity-grid">
           <article>
             <span>01</span>
-            <h3>Bar a cocktail</h3>
-            <p>Des créations liquides non homologuées par l'OMS, servies avec le sourire</p>
+            <h3>Bar à cocktails</h3>
+            <p>Des créations liquides non homologuées par l'OMS, servies avec le sourire.</p>
           </article>
           <article>
             <span>02</span>
             <h3>Job dating</h3>
-            <p>Deux minutes pour expliquer pourquoi tu merites le poste de responsable des glacons.</p>
+            <p>Deux minutes pour expliquer pourquoi tu mérites le poste de responsable des glaçons.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Pinata</h3>
-            <p>Management de conflit mais avec un baton et des bonbons.</p>
+            <h3>Piñata</h3>
+            <p>Management de conflits, mais avec un bâton et des bonbons.</p>
           </article>
           <article>
             <span>04</span>
-            <h3>Ventre a glisse</h3>
-            <p>Le seul sprint ou finir par terre est considere comme une performance.</p>
+            <h3>Ventre à glisse</h3>
+            <p>Le seul sprint où finir par terre est considéré comme une performance.</p>
           </article>
           <article>
             <span>05</span>
             <h3>Stand tatouage</h3>
-            <p>Temporaire, normalement</p>
+            <p>Temporaire, normalement.</p>
           </article>
           <article>
             <span>06</span>
             <h3>Friperie sur place</h3>
-            <p>Ramene une piece, repars avec une autre et fais semblant que c'etait prevu dans ton outfit.</p>
+            <p>Ramène une pièce, repars avec une autre et fais semblant que c'était prévu dans ton outfit.</p>
           </article>
           <article>
             <span>07</span>
             <h3>Dress To Impress</h3>
-            <p>Habillez-vous bien, seuls les admins peuvent voter. Les deux derniers auront un gage et le vainqueur un lot.</p>
+            <p>Habille-toi bien, seuls les admins peuvent voter. Les deux derniers auront un gage et le vainqueur un lot.</p>
           </article>
         </div>
 
         <div class="poll-panel">
           <div>
             <p class="section-eyebrow">Sondage pas RH-compatible</p>
-            <h2>Tu maries, tu tues, t'embrasses ?</h2>
+            <h2>Tu épouses, tu tues, t'embrasses ?</h2>
+            <p>Version Clément, Noa, Morgan. Réponse anonyme.</p>
           </div>
           <form id="mtb-form" class="poll-form">
             <label>
-              Tu maries
+              Tu épouses
               <select id="marry-choice" name="marry" required></select>
             </label>
             <label>
@@ -166,13 +165,12 @@
               <select id="kill-choice" name="kill" required></select>
             </label>
             <label>
-              Tu baises
-              <select id="kiss-choice" name="Tu embrasses" required></select>
+              Tu embrasses
+              <select id="kiss-choice" name="kiss" required></select>
             </label>
             <button class="primary-action" type="submit">Voter</button>
           </form>
-          <div class="vote-confirmation" id="vote-confirmation" aria-live="polite">
-          </div>
+          <div class="vote-confirmation" id="vote-confirmation" aria-live="polite"></div>
           <div class="poll-results" id="poll-results" aria-live="polite"></div>
         </div>
       </section>
@@ -186,22 +184,22 @@
           <article class="menu-card">
             <h3>Nourriture</h3>
             <ul>
-              <li>Chips en quantite</li>
+              <li>Chips en quantité</li>
               <li>Barbecue</li>
               <li>Saucisses</li>
               <li>Brochettes</li>
               <li>Frites</li>
-              <li>(On a pensé aux végé)<li>
-              <li>Petits gateaux</li>
+              <li>(On a pensé aux végés)</li>
+              <li>Petits gâteaux</li>
             </ul>
           </article>
           <article class="menu-card chrome-card">
             <h3>Alcool & softs</h3>
             <ul>
               <li>Cocktails</li>
-              <li>Bieres</li>
+              <li>Bières</li>
               <li>Vin</li>
-              <li>Softs, eau, glacons</li>
+              <li>Softs, eau, glaçons</li>
             </ul>
           </article>
         </div>
@@ -209,7 +207,7 @@
 
       <section class="tab-panel" id="setlist" aria-labelledby="setlist-title">
         <div class="section-heading">
-          <p class="section-eyebrow">Playlist democratique</p>
+          <p class="section-eyebrow">Playlist démocratique</p>
           <h2 id="setlist-title">Setlist</h2>
         </div>
         <div class="setlist-layout">
@@ -223,17 +221,17 @@
               <input id="song-artist" name="artist" type="text" placeholder="Ex: Benny Benassi" />
             </label>
             <label>
-              Propose par
+              Proposé par
               <input id="song-by" name="by" type="text" placeholder="Ton blaze" />
             </label>
-            <button class="primary-action" type="submit">Ajouter a la file</button>
+            <button class="primary-action" type="submit">Ajouter à la file</button>
           </form>
           <div class="setlist-board">
             <div class="board-head">
-              <span>Boite a sons</span>
+              <span>Boîte à sons</span>
             </div>
             <div class="form-status" id="song-confirmation" aria-live="polite">
-              Propose ton son, il apparaitra dans la liste commune.
+              Propose ton son, il apparaîtra dans la liste commune.
             </div>
             <ol id="song-list"></ol>
           </div>
@@ -247,16 +245,14 @@
         </div>
         <div class="maps-layout">
           <figure class="plan-card">
-            <img class="plan-image" src="assets/plan-soiree.svg" alt="Plan stylise de la soiree avec entree, maison, barbecue, bar, dancefloor et couchage" />
-            <figcaption>Plan de reperage (on voit rien)</figcaption>
+            <img class="plan-image" src="assets/plan-soiree.svg" alt="Plan stylisé de la soirée avec entrée, maison, barbecue, bar, dancefloor et couchage" />
+            <figcaption>Plan de repérage (on voit rien)</figcaption>
           </figure>
           <div class="sleep-card">
             <h3>Couchage</h3>
-            <p>
-              Ramène duvet, matelas
-            </p>
+            <p>Ramène duvet, matelas.</p>
             <div class="sleep-grid">
-              <span>Canape</span>
+              <span>Canapé</span>
               <span>Sol</span>
               <span>Tente</span>
               <span>Voiture</span>
@@ -272,7 +268,7 @@
         </div>
         <div class="admin-layout">
           <form id="admin-form" class="admin-card">
-            <p>Entre le code pour voir les details complets: presences, apports, sons et votes bruts.</p>
+            <p>Entre le code pour voir les détails complets : présences, apports, sons et votes bruts.</p>
             <label>
               Code admin
               <input id="admin-code" type="password" placeholder="Code secret" autocomplete="current-password" required />
@@ -282,12 +278,12 @@
           </form>
           <div id="admin-results" class="admin-results" hidden>
             <div class="admin-toolbar">
-              <strong>Resultats detailles</strong>
-              <button id="refresh-admin" class="mini-button" type="button">Rafraichir</button>
+              <strong>Résultats détaillés</strong>
+              <button id="refresh-admin" class="mini-button" type="button">Rafraîchir</button>
             </div>
             <div class="admin-grid">
               <article class="result-card">
-                <h3>Presences & apports</h3>
+                <h3>Présences & apports</h3>
                 <div id="admin-guests"></div>
               </article>
               <article class="result-card">
@@ -295,7 +291,7 @@
                 <div id="admin-votes"></div>
               </article>
               <article class="result-card">
-                <h3>Sons proposes</h3>
+                <h3>Sons proposés</h3>
                 <div id="admin-songs"></div>
               </article>
             </div>
