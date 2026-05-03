@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" role="img" aria-labelledby="title desc">
+  <title id="title">Plan festival de la soiree CR3PSCL</title>
+  <desc id="desc">Plan stylise avec entree, parking, maison, bar, barbecue, dancefloor, zone chill, couchage et toilettes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07080c"/>
+      <stop offset="0.52" stop-color="#151821"/>
+      <stop offset="1" stop-color="#050608"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.38" stop-color="#b9c0cc"/>
+      <stop offset="0.68" stop-color="#707986"/>
+      <stop offset="1" stop-color="#f8fbff"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" x2="1">
+      <stop offset="0" stop-color="#78f7ff"/>
+      <stop offset="0.48" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ff4fd8"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <rect width="1400" height="980" fill="url(#bg)"/>
+  <rect width="1400" height="980" fill="url(#grid)"/>
+  <circle cx="285" cy="755" r="310" fill="#78f7ff" opacity="0.12"/>
+  <circle cx="1040" cy="230" r="330" fill="#ff4fd8" opacity="0.12"/>
+  <circle cx="1010" cy="760" r="230" fill="#7cff9c" opacity="0.08"/>
+
+  <path d="M-80 210L1480 510" stroke="#78f7ff" stroke-width="10" opacity="0.42" filter="url(#glow)"/>
+  <path d="M-80 790L1480 310" stroke="#ff4fd8" stroke-width="9" opacity="0.4" filter="url(#glow)"/>
+  <path d="M160 145H1240V815H160Z" fill="#10141b" stroke="url(#chrome)" stroke-width="9"/>
+  <path d="M220 215H1180V755H220Z" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="3" stroke-dasharray="18 15"/>
+
+  <path d="M260 560C395 465 520 470 650 530S905 650 1120 500" fill="none" stroke="#78f7ff" stroke-width="8" stroke-dasharray="26 18" filter="url(#glow)"/>
+  <path d="M650 530C720 390 820 310 990 275" fill="none" stroke="#ff4fd8" stroke-width="7" stroke-dasharray="22 16" filter="url(#glow)"/>
+  <path d="M530 650C650 730 810 735 965 690" fill="none" stroke="#7cff9c" stroke-width="6" stroke-dasharray="18 15" filter="url(#glow)"/>
+
+  <g font-family="Inter, Arial, sans-serif" font-weight="900" text-anchor="middle">
+    <text x="700" y="105" fill="#f5f7fb" font-family="Impact, Anton, Arial Black, sans-serif" font-size="68">CR3PSCL MAP</text>
+    <text x="700" y="144" fill="#9ca3af" font-size="23">plan de survie non contractuel - suivre les lasers, pas les idees de 3h</text>
+
+    <g transform="translate(270 560)">
+      <rect x="-86" y="-42" width="172" height="84" rx="12" fill="url(#chrome)"/>
+      <text y="9" font-size="28" fill="#050608">ENTREE</text>
+    </g>
+    <g transform="translate(320 705)">
+      <rect x="-92" y="-39" width="184" height="78" rx="12" fill="#161b22" stroke="#78f7ff" stroke-width="3"/>
+      <text y="8" font-size="25" fill="#dffbff">PARKING</text>
+    </g>
+    <g transform="translate(995 260)">
+      <rect x="-104" y="-45" width="208" height="90" rx="13" fill="url(#chrome)"/>
+      <text y="-3" font-size="28" fill="#050608">MAISON</text>
+      <text y="28" font-size="18" fill="#303741">QG / eau</text>
+    </g>
+    <g transform="translate(455 655)">
+      <rect x="-82" y="-42" width="164" height="84" rx="12" fill="url(#chrome)"/>
+      <text y="9" font-size="28" fill="#050608">BBQ</text>
+    </g>
+    <g transform="translate(1090 655)">
+      <rect x="-80" y="-42" width="160" height="84" rx="12" fill="url(#chrome)"/>
+      <text y="9" font-size="28" fill="#050608">BAR</text>
+    </g>
+    <g transform="translate(700 530)">
+      <rect x="-155" y="-55" width="310" height="110" rx="16" fill="url(#neon)" filter="url(#glow)"/>
+      <text y="-3" font-size="34" fill="#050608">DANCEFLOOR</text>
+      <text y="32" font-size="18" fill="#050608">zone piou piou</text>
+    </g>
+    <g transform="translate(790 310)">
+      <rect x="-112" y="-40" width="224" height="80" rx="12" fill="#161b22" stroke="#ff4fd8" stroke-width="3"/>
+      <text y="8" font-size="25" fill="#ffe6fa">COUCHAGE</text>
+    </g>
+    <g transform="translate(905 705)">
+      <rect x="-105" y="-40" width="210" height="80" rx="12" fill="#161b22" stroke="#7cff9c" stroke-width="3"/>
+      <text y="8" font-size="25" fill="#eaffef">ZONE CHILL</text>
+    </g>
+    <g transform="translate(1140 405)">
+      <rect x="-72" y="-36" width="144" height="72" rx="12" fill="#161b22" stroke="#ffffff" stroke-opacity="0.45" stroke-width="3"/>
+      <text y="8" font-size="23" fill="#f5f7fb">WC</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-weight="800" fill="#cbd5e1">
+    <rect x="220" y="805" width="960" height="52" rx="10" fill="#080a0f" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="250" cy="831" r="8" fill="#78f7ff"/>
+    <text x="268" y="839" font-size="19">route principale</text>
+    <circle cx="455" cy="831" r="8" fill="#ff4fd8"/>
+    <text x="473" y="839" font-size="19">chemin couchage</text>
+    <circle cx="690" cy="831" r="8" fill="#7cff9c"/>
+    <text x="708" y="839" font-size="19">repli calme</text>
+    <text x="960" y="839" font-size="19">08/05 - secret place</text>
+  </g>
+</svg>

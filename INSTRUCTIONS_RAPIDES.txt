@@ -1,0 +1,20 @@
+VERSION A UTILISER : VERSION_FINALE_ADMIN
+
+Cette version remplace toutes les anciennes.
+
+Fonctionnement :
+- Netlify heberge le site
+- Supabase stocke les reponses
+- L'onglet Admin affiche les details avec un code
+- Pas de Netlify Functions
+- Pas de Netlify Forms
+
+Etapes :
+1. Cree un projet Supabase gratuit.
+2. Dans Supabase > SQL Editor, execute supabase-setup.sql.
+3. Dans Supabase > Project Settings > API, copie Project URL et anon public key.
+4. Ouvre config.js.
+5. Remplis SUPABASE_URL, SUPABASE_ANON_KEY et ADMIN_CODE.
+6. Upload tout le dossier VERSION_FINALE_ADMIN sur Netlify.
+
+Si config.js reste vide, le site ne pourra pas partager les reponses entre les potes.
