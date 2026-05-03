@@ -7,9 +7,9 @@ const adminCode = config.ADMIN_CODE || "";
 const hasSharedStorage = Boolean(supabaseUrl && supabaseKey);
 
 const fallbackGuests = [
-  { name: "Clement", status: "present", brings: "une confiance dangereuse" },
-  { name: "Noa", status: "maybe", brings: "peut-etre des glacons" },
-  { name: "Morgan", status: "present", brings: "des sons et des mauvaises idees" },
+  { name: "Clement", status: "present", brings: " confiance " },
+  { name: "Noa", status: "maybe", brings: "glacons" },
+  { name: "Morgan", status: "present", brings: "des mauvaises idees" },
 ];
 
 const fallbackSongs = [
@@ -127,7 +127,7 @@ function renderPoll() {
   const labels = [
     ["Tu maries", buckets.marry],
     ["Tu tues", buckets.kill],
-    ["Tu baises", buckets.kiss],
+    ["Tu embrasses", buckets.kiss],
   ];
 
   qs("#poll-results").innerHTML = labels
@@ -173,7 +173,7 @@ function renderAdminDetails() {
           return `
             <div class="admin-row">
               <strong>Vote ${index + 1}</strong>
-              <small>Marie: ${escapeHtml(vote.marry)} | Tue: ${escapeHtml(vote.kill)} | Baise: ${escapeHtml(vote.kiss)}</small>
+              <small>Marie: ${escapeHtml(vote.marry)} | Tue: ${escapeHtml(vote.kill)} | Embrasse: ${escapeHtml(vote.kiss)}</small>
             </div>
           `;
         })
