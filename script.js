@@ -127,7 +127,7 @@ function renderPoll() {
   const labels = [
     ["Tu maries", buckets.marry],
     ["Tu tues", buckets.kill],
-    ["Tu embrasses", buckets.kiss],
+    ["Tu baises", buckets.kiss],
   ];
 
   qs("#poll-results").innerHTML = labels
