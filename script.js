@@ -336,6 +336,12 @@ qs("#refresh-admin").addEventListener("click", async () => {
 
 qs("#guest-form").addEventListener("submit", async (event) => {
   event.preventDefault();
+
+  if (localStorage.getItem("cr3pscl-presence")) {
+    qs("#guest-confirmation").textContent = "T'as déjà répondu, triche pas.";
+    return;
+  }
+
   const guest = {
     name: qs("#guest-name").value.trim(),
     status: qs("#guest-status").value,
@@ -345,10 +351,11 @@ qs("#guest-form").addEventListener("submit", async (event) => {
 
   qs("#guest-confirmation").textContent = "Envoi...";
   const result = await saveSharedEvent("guest", guest);
+  localStorage.setItem("cr3pscl-presence", "true");
   event.currentTarget.reset();
   qs("#guest-confirmation").textContent = result.local
-    ? "C'est note en local. Configure Supabase pour le partage public."
-    : "C'est note, tout le monde peut le voir.";
+    ? "C'est noté en local."
+    : "C'est noté, tout le monde peut le voir.";
 });
 
 qs("#song-form").addEventListener("submit", async (event) => {
